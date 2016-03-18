@@ -1,11 +1,12 @@
 {
   "name": "react-chartjsm",
-  "version": "0.1.1",
+  "version": "0.1.4",
   "description": "React component for Chart.js",
-  "main": "./src/index.js",
+  "main": "./lib/index.js",
   "scripts": {
     "build": "webpack",
-    "uglify": "UGLIFY=true webpack"
+    "uglify": "UGLIFY=true webpack",
+    "prepublish": "babel ./src --out-dir ./lib"
   },
   "repository": {
     "type": "git",
