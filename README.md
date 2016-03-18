@@ -1,5 +1,6 @@
 # chartjs-react
 > React component for Chart.js
+
 ### Installation
 `npm install chartjs-react --save`
 ### Example Usage
