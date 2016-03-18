@@ -1,4 +1,4 @@
-# chartjs-react
+# react-chartjsm
 > React component for Chart.js
 
 ### Installation
