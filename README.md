@@ -19,6 +19,7 @@ var Main = React.createClass({
   }
 });
 ```
+
 Get your Chart instance, like
 ```JavaScript
 import {Bar} from 'chartjs-react';
