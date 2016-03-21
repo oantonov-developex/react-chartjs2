@@ -1,5 +1,5 @@
 {
-  "name": "react-chartjsm",
+  "name": "react-chartjs2",
   "version": "0.1.5",
   "description": "React component for Chart.js",
   "main": "./lib/index.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:houjiazong/react-chartjsm.git"
+    "url": "git@github.com:topdmc/react-chartjs2.git"
   },
   "keywords": [
     "react",
@@ -23,9 +23,9 @@
   "author": "houjiazong <houjiazong@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/houjiazong/react-chartjsm/issues"
+    "url": "https://github.com/topdmc/react-chartjs2/issues"
   },
-  "homepage": "https://github.com/houjiazong/react-chartjsm",
+  "homepage": "https://github.com/topdmc/react-chartjs2",
   "devDependencies": {
     "babel-core": "^6.7.2",
     "babel-loader": "^6.2.4",
