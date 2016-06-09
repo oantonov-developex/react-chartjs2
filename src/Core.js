@@ -22,7 +22,7 @@ class Core extends Component {
   }
 
   componentWillUnmount() {
-    this.destoryChart();
+    this.destroyChart();
   }
 
   componentWillReceiveProps(nextProps) {
@@ -37,7 +37,11 @@ class Core extends Component {
   initializeChart(props) {
     const {data, options} = props;
     const ctx = this.refs['canvas'].getContext('2d');
-    this.chart = new Chart(ctx)[this.getChartType()](data, options || {});
+    this.chart = new Chart(ctx, {
+      type: this.getChartType(),
+      data: data,
+      options: options
+    })
   }
 
   getChart() {
@@ -55,7 +59,7 @@ class Core extends Component {
       ref: true
     });
     return <canvas ref='canvas' {..._props} />
-  }
-};
+  };
+}
 
 export default Core;

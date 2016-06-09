@@ -1,4 +1,5 @@
-export Bar from './Bar';
+export Bar from './Bar.js';
+export Bubble from './Bubble.js';
 export Doughnut from './Doughnut.js';
 export Line from './Line.js';
 export Pie from './Pie.js';
