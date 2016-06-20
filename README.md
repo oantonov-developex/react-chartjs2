@@ -3,6 +3,8 @@
 
 ### Installation
 `npm install react-chartjs2 --save`
+### Demo
+Live demo: http://houjiazong.github.io/react-chartjs2/
 ### Example Usage
 ```JavaScript
 // using ES6
