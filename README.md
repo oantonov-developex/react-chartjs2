@@ -8,17 +8,17 @@ Live demo: http://houjiazong.github.io/react-chartjs2/
 ### Example Usage
 ```JavaScript
 // using ES6
-import {Bar} from 'react-chartjs2';
+import RC2 from 'react-chartjs2';
 class Main extends Component {
   render() {
-    return <Bar data={chartData} options={chartOptions} />;
+    return <RC2 data={chartData} options={chartOptions} type='bar' />;
   }
 };
 // not using ES6
-var Bar = require('react-chartjs2').Bar;
+var RC2 = require('react-chartjs2');
 var Main = React.createClass({
   render: function() {
-    return <Bar data={chartData} options={chartOptions} />;
+    return <RC2 data={chartData} options={chartOptions} type='bar' />;
   }
 });
 ```
@@ -28,11 +28,11 @@ Get your Chart instance, like
 class Main extends Component {
   componentDidMount() {
     this.myChart = this.refs['canvas'].getChart();
-    this.myChart.datasets[0].points[2].value = 50;
+    this.myChart.data.datasets[0].points[2] = 50;
     this.myChart.update();
   }
   render() {
-    return <Bar ref='canvas' data={chartData} options={chartOptions} />;
+    return <RC2 ref='canvas' data={chartData} options={chartOptions} type='bar' />;
   }
 };
 ```

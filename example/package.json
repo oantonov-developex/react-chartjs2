@@ -1,0 +1,17 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "example.js",
+  "scripts": {
+    "example": "webpack && open index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react-chartjs2": "^1.0.0"
+  },
+  "devDependencies": {
+    "webpack": "^1.13.1"
+  }
+}
