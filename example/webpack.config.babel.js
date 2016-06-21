@@ -14,7 +14,8 @@ module.exports = {
   },
   externals: {
     'react': 'React',
-    'react-dom': 'ReactDOM'
+    'react-dom': 'ReactDOM',
+    'chart.js': 'Chart'
   },
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
