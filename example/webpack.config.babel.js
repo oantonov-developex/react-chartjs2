@@ -5,7 +5,6 @@ module.exports = {
   entry: {
     app: './example.js'
   },
-  devtool: 'source-map',
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: './example.js'
@@ -13,10 +12,18 @@ module.exports = {
   resolve: {
     extensions: ['', '.js', '.jsx']
   },
+  externals: {
+    'react': 'React',
+    'react-dom': 'ReactDOM'
+  },
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.optimize.DedupePlugin(),
-    new webpack.optimize.AggressiveMergingPlugin()
+    new webpack.optimize.AggressiveMergingPlugin(),
+    new webpack.optimize.UglifyJsPlugin({
+      compress:{
+        warnings: true
+      }
+    })
   ],
   module: {
     loaders: [{
