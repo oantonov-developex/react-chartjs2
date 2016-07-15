@@ -60,7 +60,7 @@ class Core extends Component {
 Core.propTypes = {
   data: PropTypes.object.isRequired,
   options: PropTypes.object,
-  type: PropTypes.oneOf(['doughnut', 'pie', 'line', 'bar', 'radar', 'polarArea']).isRequired
+  type: PropTypes.oneOf(['doughnut', 'pie', 'line', 'bar', 'radar', 'polarArea', 'horizontalBar']).isRequired
 };
 
 export default Core;
