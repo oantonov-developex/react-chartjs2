@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "react-chartjs2": "^1.0.1"
+    "react-chartjs2": "^1.0.3"
   },
   "devDependencies": {
     "webpack": "^1.13.1"
