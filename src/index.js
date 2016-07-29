@@ -2,30 +2,22 @@ import React, {Component, PropTypes} from 'react';
 import Chart from 'chart.js';
 
 class Core extends Component {
-  constructor(props) {
-    super(props);
-  }
-
-  blacklist(obj, filters) {
-    let results = {};
-    for (let key in obj) {
-      if (filters[key]) continue;
-      results[key] = obj[key];
-    }
-    return results;
-  }
 
   componentDidMount() {
     this.initializeChart(this.props);
+  }
+
+  componentWillReceiveProps(nextProps) {
+    this.destroyChart();
+    this.initializeChart(nextProps);
   }
 
   componentWillUnmount() {
     this.destroyChart();
   }
 
-  componentWillReceiveProps(nextProps) {
-    this.destroyChart();
-    this.initializeChart(nextProps);
+  getChart() {
+    return this.chart;
   }
 
   destroyChart() {
@@ -42,8 +34,13 @@ class Core extends Component {
     })
   }
 
-  getChart() {
-    return this.chart;
+  blacklist(obj, filters) {
+    let results = {};
+    for (let key in obj) {
+      if (filters[key]) continue;
+      results[key] = obj[key];
+    }
+    return results;
   }
 
   render() {
@@ -60,7 +57,7 @@ class Core extends Component {
 Core.propTypes = {
   data: PropTypes.object.isRequired,
   options: PropTypes.object,
-  type: PropTypes.oneOf(['doughnut', 'pie', 'line', 'bar', 'radar', 'polarArea']).isRequired
+  type: PropTypes.oneOf(['doughnut', 'pie', 'line', 'bar', 'radar', 'polarArea', 'bubble']).isRequired
 };
 
 export default Core;
