@@ -57,7 +57,7 @@ class Core extends Component {
 Core.propTypes = {
   data: PropTypes.object.isRequired,
   options: PropTypes.object,
-  type: PropTypes.oneOf(['doughnut', 'pie', 'line', 'bar', 'radar', 'polarArea', 'bubble']).isRequired
+  type: PropTypes.oneOf(['doughnut', 'pie', 'line', 'bar', 'radar', 'polarArea', 'bubble', 'horizontalBar']).isRequired
 };
 
 export default Core;
