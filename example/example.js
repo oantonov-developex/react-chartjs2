@@ -8,6 +8,7 @@ import Pie from './Components/Pie';
 import PolarArea from './Components/PolarArea';
 import Radar from './Components/Radar';
 import Realtime from './Components/Realtime';
+import Bubble from './Components/Bubble';
 
 class Example extends Component {
   render() {
@@ -19,6 +20,10 @@ class Example extends Component {
             <li>
               <h2>Realtime</h2>
               <Realtime />
+            </li>
+            <li>
+              <h2>Bubble</h2>
+              <Bubble />
             </li>
             <li>
               <h2>Bar</h2>

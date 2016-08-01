@@ -1,6 +1,6 @@
 {
   "name": "react-chartjs2",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React component for Chart.js",
   "main": "./lib/index.js",
   "scripts": {
@@ -33,7 +33,7 @@
     "babel-preset-stage-0": "^6.5.0"
   },
   "dependencies": {
-    "chart.js": "^2.1.6"
+    "chart.js": "^2.2.0"
   },
   "peerDependencies": {
     "react": "^15.1.0",
